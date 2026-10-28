@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shade52ear-deploy_jd295"
+version = "0.1.0"
+description = "按结构键把条目聚类，标出模型部署工程师·工具调用的参数错配上的同组项与各组的代表样本"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "shade52ear" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://shade52ear.github.io"
+Repository = "https://github.com/shade52ear/deploy_jd295"
+Issues = "https://github.com/shade52ear/deploy_jd295/issues"
+
+[project.scripts]
+deploy_jd295 = "deploy_jd295:main"
+
+[tool.setuptools]
+py-modules = ["deploy_jd295"]
